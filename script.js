@@ -1,3 +1,48 @@
+// DEMOS
+// https://dagrejs.github.io/project/dagre-d3/latest/demo/sentence-tokenization.html
+// https://github.com/dagrejs/dagre-d3/wiki#demos
+
+// Typescript - accessors
+// https://www.typescriptlang.org/docs/handbook/classes.html#accessors
+// https://stackoverflow.com/questions/12827266/get-and-set-in-typescript
+// https://medium.com/@bharat.tiwari/intercept-input-property-change-in-angular-690567eb63ec
+
+var data = {
+  nodes: [
+    { id: "start", label: "start" },
+    { id: "verify_name_0", label: "verify_name" },
+    { id: "verify_line_0", label: "verify_line" },
+    { id: "add_travel_option_0", label: "add_travel_option" },
+    { id: "verify_travel_length_0", label: "verify_travel_length" }
+  ],
+  edges: [
+    {
+      src: "start",
+      dest: "verify_name_0",
+      id: "start-verify_name_0",
+      label: ""
+    },
+    {
+      src: "verify_name_0",
+      dest: "verify_line_0",
+      id: "verify_name_0-verify_line_0",
+      label: ""
+    },
+    {
+      src: "verify_line_0",
+      dest: "add_travel_option_0",
+      id: "verify_line_0-add_travel_option_0",
+      label: ""
+    },
+    {
+      src: "add_travel_option_0",
+      dest: "verify_travel_length_0",
+      id: "add_travel_option_0-verify_travel_length_0",
+      label: ""
+    }
+  ]
+};
+
 // Create the input graph
 var g = new dagreD3.graphlib.Graph()
   .setGraph({})

@@ -36,7 +36,7 @@ pre {
 
 /* This sets the color for "TK" nodes to a light blue green. */
 g.type-TK > rect {
-  fill: #00ffd0;
+  fill: red;
 }
 
 text {
